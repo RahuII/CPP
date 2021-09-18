@@ -4,19 +4,24 @@ using namespace std;
 int main()
 {
     int n = 5;
-    int count = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 0; j < n - i; j++)
+        for (int j = 1; j <= n - i; j++)
         {
             cout << " ";
         }
-        for (int j = 0; j < i; j++)
+        int decr = i;
+        for (int j = 1; j <= i; j++)
         {
-            cout << count;
-            count--;
+            cout << decr;
+            decr--;
         }
-        count++;
+        int incr = 2;
+        for (int j = 2; j <= i; j++)
+        {
+            cout << incr;
+            incr++;
+        }
         cout << "\n";
     }
 }
